@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #37B5B6;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    overflow-y: hidden; /* Prevent vertical scrolling */
+}
+
+.header_text {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 2rem rgb(233, 48, 48);
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confetti-particle {
+    position: absolute;
+    width: 10px; 
+    height: 10px; 
+    background-color: #f00; 
+}
+
+footer {
+    background-color: #37B5B6;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-shadow: 0 0 2rem rgb(233, 48, 48);
+    font-family: "Montserrat", sans-serif
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Go Out</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Do you wanna go out with me?</h1>
+        </div>
+        <div class="gif_container">
+            <img src = "https://media.tenor.com/jZwdo-eAxoEAAAAi/sweet-zahraa-cute-zahraa.gif" alt = "Please Sticker"> 
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick = "nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+            <script>
+                function nextPage(){
+                    window.location.href = 'yes.html';
+                }
+                function moveButton(){
+                    console.log("called");
+                    let x = Math.random() * (window.innerWidth - document.getElementById("noButton").offsetWidth) - 150;
+                    let y = Math.random() * (window.innerHeight - document.getElementById("noButton").offsetHeight) - 5;
+                    document.getElementById("noButton").style.left = `${x}px`;
+                    document.getElementById("noButton").style.top = `${y}px`;
+                }
+            </script>
+        </div>
+    </div>
+</body>
+<footer>
+    © 2024, By Prince
+</footer>
+</html>
